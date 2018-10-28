@@ -1,0 +1,193 @@
+// Home Page Styles
+
+.home {
+  .home-content {
+    padding: 8% 4% 4%;
+
+    .split-content {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 100px;
+
+      @media only screen and (max-width: 700px) {
+        flex-direction: column;
+        margin-bottom: 50px;
+      }
+      .split-container {
+        width: 48%;
+          
+        @media only screen and (max-width: 700px) {
+          width: 100%;
+
+          h2 {
+            margin: 7% 0;
+            font-size: 2.5rem;
+          }
+        }
+      }
+
+      .img-right {
+        order: 1;
+        display: inline-block;
+        width: 50%;
+        font-size: 0;
+        line-height: 0;
+        vertical-align: middle;
+        background-size: cover;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-image: url('../img/home/home-img-1.png');
+    
+
+          @media only screen and (max-width: 700px) {
+            order: -1;
+            width: 100%;
+          }
+
+          @media only screen and (max-width: 420px) {
+            background-image: url('../img/home/home-mobile-img-1.png');
+          }
+          
+          .architects {
+            display: block;
+            height: 0;
+            padding-top: 67.07%;
+            
+            @media only screen and (max-width: 420px) {
+              padding-top: 94.82%;
+            }
+          }
+        }
+        
+        .not-right {
+          order: -1;
+          background-image: url('../img/home/home-img-2.png');
+          
+          @media only screen and (max-width: 420px) {
+            background-image: url('../img/home/home-mobile-img-2.png');
+          }
+          
+          .futuristic {
+            display: block;
+            height: 0;
+            padding-top: 67.07%;
+            
+            @media only screen and (max-width: 420px) {
+              padding-top: 94.82%;
+            }
+          }
+        }
+        
+      .text-container {
+        // padding: 44px 0;
+        padding-top: 30px;
+        display: flex;
+        flex-wrap: wrap;
+
+        @media only screen and (max-width: 700px) {
+          padding-top: 0;
+        }
+        .btn {
+          .button();
+          font-size: 1.6rem;
+
+          @media only screen and (max-width: 700px) {
+            margin: 7% auto 0;
+            width: 100%;
+            max-width: 355px;
+            height: 50px;
+            padding-top: 15px;
+          }
+        }
+      }
+    }
+  }
+
+  .project-content {
+    margin-top: 30px;
+
+    .villas {
+      display: inline-block;
+      width: 100%;
+      font-size: 0;
+      line-height: 0;
+      vertical-align: middle;
+      background-size: cover;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      background-image: url('../img/home/home-villas-img.png');
+
+        @media only screen and (max-width: 420px) {
+          background-image: url('../img/home/home-mobile-villas-img.png');
+        }
+        
+        .villas-inner {
+          display: block;
+          height: 0;
+          padding-top: 26.90%;
+          
+          @media only screen and (max-width: 420px) {
+            padding-top: 62.5%;
+          }
+        }
+      }
+
+      .outskirts {
+        background-image: url('../img/home/home-outskirts-img.png');
+
+        @media only screen and (max-width: 420px) {
+          background-image: url('../img/home/home-mobile-outskirts-img.png');
+        }
+      }
+      
+      .blocks {
+        background-image: url('../img/home/home-the-blocks-img.png');
+
+        @media only screen and (max-width: 420px) {
+          background-image: url('../img/home/home-mobile-the-blocks-img.png');
+        }
+      }
+
+    .float {
+      float: right;
+
+      @media only screen and (max-width: 700px) {
+        float: none;
+      }
+    }
+
+    h3 {
+      margin-top: -54px;
+      z-index: 1;
+      position: relative;
+      background-color: #d8d8d8;
+      height: 85px;
+      width: 325px;
+      text-align: center;
+      padding-top: 28px;
+      font-weight: 100;
+      letter-spacing: 5px;
+      border: 1px solid @general-background;
+
+      @media only screen and (max-width: 700px) {
+        width: 92%;
+        margin: -24px auto;
+      }
+    }
+
+    .text-container {
+      width: 45%;
+      margin: 80px auto;
+
+      @media only screen and (max-width: 700px) {
+        width: 100%;
+        margin: 50px auto;
+      }
+
+      p {
+        clear: right;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

@@ -1,0 +1,84 @@
+// Footer Styles
+
+footer {
+  height: 100%;
+  background-color: @footer-background;
+  color: @general-background;
+
+  h4 {
+    font-size: 2rem;
+    line-height: 24px;
+    font-weight: bold;
+    color: @general-background;
+  }
+
+  p {
+    font-size: 1.3rem;
+    line-height: 26px;
+    font-weight: 300;
+  }
+
+  .footer-main {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 4% 0;
+
+    @media only screen and (max-width: 700px) {
+      align-items: flex-start;
+    }
+    
+    .footer-body {
+      display: flex;
+      width: 100%;
+
+      @media only screen and (max-width: 700px) {
+        flex-direction: column;
+      }
+
+      .footer-connect {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 30px;
+        width: 46%;
+        height: 100%;
+        margin-right: 2%;
+        
+        @media only screen and (max-width: 700px) {
+          width: 100%;
+          padding: 20px 0;
+        }
+        
+        input {
+          width: 100%;
+          max-width: 355px;
+          border-radius: 5px;
+          padding-left: 8px;
+          height: 35px;
+          margin: 12px 0;
+          font-size: 1.4rem;
+          height: 48px;
+        }
+      }
+      
+      .footer-locations {
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+        
+        @media only screen and (max-width: 700px) {
+          width: 100%;
+        }
+        
+        @media only screen and (max-width: 420px) {
+          flex-direction: column;
+        }
+
+        .footer-location {
+          margin-bottom: 24px;
+        }
+      }
+    }
+  }
+}

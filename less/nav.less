@@ -1,0 +1,82 @@
+// Navigation Styles
+.nav-main {
+  z-index: 3;
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  background-color: @nav-background;
+
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1025px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 3.5%;
+    color: @general-background;
+
+    h2 {
+      color: @general-background;
+    }
+    .nav-burger {
+      cursor: pointer;
+
+      .nav-burger-button div {
+        width: 35px;
+        height: 5px;
+        margin: 6px 0;
+        background-color: @general-background;
+        border-radius: 3px;
+        transition: 0.5s;
+      }
+
+      .change .top-bar {
+        -webkit-transform: rotate(-45deg) translate(-11px, 9px);
+        transform: rotate(-45deg) translate(-11px, 9px);
+      }
+
+      .change .mid-bar {
+        opacity: 0;
+      }
+
+      .change .bottom-bar {
+        -webkit-transform: rotate(45deg) translate(-5px, -5px);
+        transform: rotate(45deg) translate(-5px, -5px);
+      }
+    }
+  }
+
+  .nav-burger-links {
+    z-index: 2;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh; // 770px?
+    background-color: @nav-background;
+    opacity: 0.9;
+    .nav-link {
+      font-size: 4.8rem;
+      font-weight: bold;
+      line-height: 85px;
+      text-decoration: none;
+      color: @general-background;
+      &:hover {
+        color: @tab-hover-background;
+      }
+      //   text-align: center;
+      //   padding: 15px 0;
+      //   font-size: 18px;
+      //   text-decoration: none;
+    }
+  }
+
+  .toggle-burger {
+    display: none;
+  }
+  //   }
+}

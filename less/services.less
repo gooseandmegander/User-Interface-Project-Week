@@ -1,0 +1,67 @@
+// Services Page Styles
+
+.services {
+  padding: 50px 5%;
+
+  .services-tabs {
+    margin-top: 50px;
+
+    .tab-links {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+
+      .tab-link {
+        width: 200px;
+        height: 50px;
+        background-color: @general-background;
+        color: #222222;
+        border: 1px solid #222222;
+        text-align: center;
+        padding-top: 14px;
+        box-shadow: 1px 1px 1px #222222;
+        font-size: 2.4rem;
+        font-weight: bold;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #5e9fb9;
+          color: @general-background;
+        }
+      }
+
+      .tab-link-selected {
+        background-color: #5e9fb9;
+        color: @general-background;
+      }
+    }
+
+    .tab-content {
+      .tab-content-container {
+        display: none;
+        margin-top: 40px;
+
+        .tab-content-card {
+          display: flex;
+          justify-content: space-between;
+          padding-top: 20px;
+
+          .tab-content-text {
+            width: 47%;
+
+            &:first-child p {
+              padding-bottom: 20px;
+            }
+          }
+          img {
+            width: 48%;
+          }
+        }
+      }
+
+      .tab-content-selected {
+        display: block;
+      }
+    }
+  }
+}
